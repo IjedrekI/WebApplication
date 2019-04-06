@@ -1,0 +1,20 @@
+<div>
+    <form [formGroup]="newMove">
+        <mat-form-field>
+            <input matInput placeholder="Tytuł" formControlName="title">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="overview" formControlName="overview">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="director" formControlName="director">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="posterPath" formControlName="posterPath">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="year" formControlName="year">
+        </mat-form-field>
+        <button mat-raised-button type="button" (click)="onNewMovieClick()">text</button>
+    </form>
+</div>
